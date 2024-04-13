@@ -12,12 +12,14 @@ on:
 permissions:
   contents: read
 
+
 jobs:
   build:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
+
 
 
     steps:
